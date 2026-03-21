@@ -1,0 +1,77 @@
+{
+  "name": "Pinterest",
+  "slug": "pinterest",
+  "aliases": ["pin", "pins"],
+  "placements": [
+    {
+      "name": "Standard Pin",
+      "slug": "standard",
+      "aliases": ["image-pin", "promoted-pin"],
+      "formats": {
+        "image": { "dimensions": "1000×1500", "aspectRatio": "2:3", "maxSize": "20MB", "types": ["JPG", "PNG"] }
+      },
+      "text": {
+        "Title": { "max": 100 },
+        "Description": { "max": 500 }
+      },
+      "requirements": ["Destination URL required"],
+      "notes": ["2:3 aspect ratio performs best", "Vertical images get more engagement"]
+    },
+    {
+      "name": "Video Pin",
+      "slug": "video",
+      "aliases": ["promoted-video"],
+      "formats": {
+        "video": { "dimensions": "1000×1500 (2:3), 1080×1080 (1:1), or 1080×1920 (9:16)", "aspectRatio": "2:3, 1:1, or 9:16", "maxSize": "2GB", "types": ["MP4", "MOV"], "duration": "4s–15min", "recommended": "6–15s" }
+      },
+      "text": {
+        "Title": { "max": 100 },
+        "Description": { "max": 500 }
+      },
+      "requirements": [],
+      "notes": ["Autoplay on mute", "Add text overlays for accessibility"]
+    },
+    {
+      "name": "Carousel Pin",
+      "slug": "carousel",
+      "aliases": ["carousel-pin"],
+      "formats": {
+        "image": { "dimensions": "1000×1500 or 1080×1080", "aspectRatio": "1:1 or 2:3", "maxSize": "20MB per image", "types": ["JPG", "PNG"] }
+      },
+      "text": {
+        "Title": { "max": 100 },
+        "Description": { "max": 500 }
+      },
+      "requirements": ["2–5 cards", "All cards same aspect ratio"],
+      "notes": ["Users swipe to see more cards"]
+    },
+    {
+      "name": "Shopping Pin",
+      "slug": "shopping",
+      "aliases": ["shop", "product-pin"],
+      "formats": {
+        "image": { "dimensions": "1000×1500", "aspectRatio": "2:3", "maxSize": "20MB", "types": ["JPG", "PNG"] }
+      },
+      "text": {
+        "Title": { "max": 100 },
+        "Description": { "max": 500 }
+      },
+      "requirements": ["Product catalog required", "Verified Merchant Program"],
+      "notes": ["Shows real-time pricing and availability", "Direct checkout supported"]
+    },
+    {
+      "name": "Idea Pin Ad",
+      "slug": "idea",
+      "aliases": ["idea-pin", "story-pin"],
+      "formats": {
+        "image": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "20MB", "types": ["JPG", "PNG"] },
+        "video": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "2GB", "types": ["MP4", "MOV"], "duration": "3s–60s" }
+      },
+      "text": {
+        "Title": { "max": 100 }
+      },
+      "requirements": ["Up to 20 pages per Idea Pin", "Mix of images and videos allowed"],
+      "notes": ["Full-screen, multi-page format", "Great for tutorials and how-tos"]
+    }
+  ]
+}

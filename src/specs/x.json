@@ -1,0 +1,85 @@
+{
+  "name": "X (Twitter)",
+  "slug": "x",
+  "aliases": ["twitter", "tw"],
+  "placements": [
+    {
+      "name": "Promoted Ad (Image)",
+      "slug": "promoted-image",
+      "aliases": ["image", "single-image", "promoted"],
+      "formats": {
+        "image": { "dimensions": "1200×675 (1.91:1) or 1200×1200 (1:1)", "aspectRatio": "1.91:1 or 1:1", "maxSize": "5MB", "types": ["JPG", "PNG"] }
+      },
+      "text": {
+        "Tweet text": { "max": 280 }
+      },
+      "requirements": ["At least one image"],
+      "notes": ["1.91:1 for landscape timeline cards", "1:1 for square cards"]
+    },
+    {
+      "name": "Promoted Ad (Video)",
+      "slug": "promoted-video",
+      "aliases": ["video"],
+      "formats": {
+        "video": { "dimensions": "1200×1200 (1:1) or 1920×1080 (16:9)", "aspectRatio": "1:1 or 16:9", "maxSize": "512MB", "types": ["MP4"], "duration": "0.5s–140s", "recommended": "15s or less" }
+      },
+      "text": {
+        "Tweet text": { "max": 280 }
+      },
+      "requirements": ["H264 codec, AAC audio"],
+      "notes": ["Autoplay on mute in timeline", "Add captions"]
+    },
+    {
+      "name": "Carousel Ad",
+      "slug": "carousel",
+      "aliases": ["carousel-ad"],
+      "formats": {
+        "image": { "dimensions": "800×800 (1:1) or 800×418 (1.91:1)", "aspectRatio": "1:1 or 1.91:1", "maxSize": "5MB per image", "types": ["JPG", "PNG"] },
+        "video": { "dimensions": "800×800 (1:1) or 800×450 (16:9)", "aspectRatio": "1:1 or 16:9", "maxSize": "512MB per video", "types": ["MP4"], "duration": "0.5s–140s" }
+      },
+      "text": {
+        "Tweet text": { "max": 280 },
+        "Card title": { "max": 70 }
+      },
+      "requirements": ["2–6 cards", "Can mix images and videos"],
+      "notes": ["Each card can have unique URL"]
+    },
+    {
+      "name": "Vertical Video Ad",
+      "slug": "vertical-video",
+      "aliases": ["vertical", "immersive"],
+      "formats": {
+        "video": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "512MB", "types": ["MP4"], "duration": "0.5s–140s", "recommended": "15s" }
+      },
+      "text": {
+        "Tweet text": { "max": 280 }
+      },
+      "requirements": ["Full-screen immersive format"],
+      "notes": ["Appears in Explore and Immersive viewer"]
+    },
+    {
+      "name": "Amplify Pre-Roll",
+      "slug": "amplify",
+      "aliases": ["preroll", "amplify-preroll"],
+      "formats": {
+        "video": { "dimensions": "1280×720 min", "aspectRatio": "16:9", "maxSize": "1GB", "types": ["MP4"], "duration": "6s–15s" }
+      },
+      "text": {},
+      "requirements": ["Plays before premium publisher video content"],
+      "notes": ["Brand-safe curated content categories"]
+    },
+    {
+      "name": "X Takeover (Timeline)",
+      "slug": "timeline-takeover",
+      "aliases": ["takeover", "first-view"],
+      "formats": {
+        "video": { "dimensions": "1200×1200 or 1920×1080", "aspectRatio": "1:1 or 16:9", "maxSize": "512MB", "types": ["MP4"], "duration": "up to 140s" }
+      },
+      "text": {
+        "Tweet text": { "max": 280 }
+      },
+      "requirements": ["Premium placement — first ad of the day in timeline"],
+      "notes": ["Contact X sales for booking", "Massive reach on launch days"]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "name": "Snapchat",
+  "slug": "snapchat",
+  "aliases": ["snap"],
+  "placements": [
+    {
+      "name": "Single Image/Video",
+      "slug": "single",
+      "aliases": ["snap-ad", "image-video"],
+      "formats": {
+        "image": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "5MB", "types": ["JPG", "PNG"] },
+        "video": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "1GB", "types": ["MP4", "MOV"], "duration": "3s–180s", "recommended": "3–5s" }
+      },
+      "text": {
+        "Brand name": { "max": 25 },
+        "Headline": { "max": 34 }
+      },
+      "requirements": ["Full-screen vertical only"],
+      "notes": ["Swipe-up for action", "Most common Snap ad format"]
+    },
+    {
+      "name": "Story Ad",
+      "slug": "story",
+      "aliases": ["story-ad"],
+      "formats": {
+        "image": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "5MB", "types": ["JPG", "PNG"] },
+        "video": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "1GB", "types": ["MP4", "MOV"], "duration": "3s–180s" }
+      },
+      "text": {
+        "Brand name": { "max": 25 },
+        "Headline": { "max": 34 }
+      },
+      "requirements": ["3–20 ads per Story set", "Tile image: 360×600"],
+      "notes": ["Appears in Discover feed", "Users tap to view full story"]
+    },
+    {
+      "name": "Collection Ad",
+      "slug": "collection",
+      "aliases": ["product-catalog"],
+      "formats": {
+        "image": { "dimensions": "1080×1920 (hero) + product tiles", "aspectRatio": "9:16", "maxSize": "5MB", "types": ["JPG", "PNG"] },
+        "video": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "1GB", "types": ["MP4", "MOV"] }
+      },
+      "text": {
+        "Brand name": { "max": 25 },
+        "Headline": { "max": 34 }
+      },
+      "requirements": ["Product catalog required", "4 tappable product tiles"],
+      "notes": ["Shoppable format", "Great for e-commerce"]
+    },
+    {
+      "name": "AR Lens",
+      "slug": "ar-lens",
+      "aliases": ["lens", "ar", "filter"],
+      "formats": {
+        "other": { "types": ["Lens Studio project"], "note": "Built with Snap Lens Studio" }
+      },
+      "text": {
+        "Brand name": { "max": 25 },
+        "CTA": { "max": 20 }
+      },
+      "requirements": ["Created via Lens Studio", "Review process required"],
+      "notes": ["Interactive AR experience", "Can include Face Lens, World Lens, or both"]
+    },
+    {
+      "name": "Commercials",
+      "slug": "commercial",
+      "aliases": ["commercials", "non-skippable"],
+      "formats": {
+        "video": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "1GB", "types": ["MP4", "MOV"], "duration": "6s non-skip + up to 180s total" }
+      },
+      "text": {
+        "Brand name": { "max": 25 },
+        "Headline": { "max": 34 }
+      },
+      "requirements": ["First 6 seconds are non-skippable", "Appears in curated content"],
+      "notes": ["Premium placement within Shows and Publisher content"]
+    }
+  ]
+}

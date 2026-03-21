@@ -1,0 +1,109 @@
+{
+  "name": "Meta",
+  "slug": "meta",
+  "aliases": ["facebook", "fb", "instagram", "ig"],
+  "placements": [
+    {
+      "name": "Feed Ad",
+      "slug": "feed",
+      "aliases": ["news-feed", "facebook-feed", "ig-feed"],
+      "formats": {
+        "image": { "dimensions": "1080×1080", "aspectRatio": "1:1", "maxSize": "30MB", "types": ["JPG", "PNG"] },
+        "video": { "dimensions": "1080×1080 or 1080×1920", "aspectRatio": "1:1 or 4:5", "maxSize": "4GB", "types": ["MP4", "MOV"], "duration": "1s–240s", "recommended": "15s or less" }
+      },
+      "text": {
+        "Primary text": { "recommended": 125, "max": 2200 },
+        "Headline": { "recommended": 27, "max": 255 },
+        "Description": { "recommended": 27, "max": 255 }
+      },
+      "requirements": ["Link required for traffic/conversion objectives", "CTA button optional"],
+      "notes": ["4:5 aspect ratio recommended for feed to maximize screen space"]
+    },
+    {
+      "name": "Stories",
+      "slug": "stories",
+      "aliases": ["story", "ig-stories", "fb-stories"],
+      "formats": {
+        "image": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "30MB", "types": ["JPG", "PNG"] },
+        "video": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "4GB", "types": ["MP4", "MOV"], "duration": "1s–120s", "recommended": "15s or less" }
+      },
+      "text": {
+        "Primary text": { "recommended": 125, "max": 2200 }
+      },
+      "requirements": ["Full-screen vertical format", "Safe zone: keep text/logos within center 1080×1420"],
+      "notes": ["Top and bottom 14% reserved for profile and CTA overlay"]
+    },
+    {
+      "name": "Reels",
+      "slug": "reels",
+      "aliases": ["ig-reels", "fb-reels"],
+      "formats": {
+        "video": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "4GB", "types": ["MP4", "MOV"], "duration": "0s–90s", "recommended": "15–30s" }
+      },
+      "text": {
+        "Primary text": { "recommended": 72, "max": 2200 }
+      },
+      "requirements": ["Vertical video only", "Sound on recommended"],
+      "notes": ["Reels ads appear between organic Reels"]
+    },
+    {
+      "name": "Carousel",
+      "slug": "carousel",
+      "aliases": ["carousel-ad"],
+      "formats": {
+        "image": { "dimensions": "1080×1080", "aspectRatio": "1:1", "maxSize": "30MB", "types": ["JPG", "PNG"] },
+        "video": { "dimensions": "1080×1080", "aspectRatio": "1:1", "maxSize": "4GB", "types": ["MP4", "MOV"], "duration": "1s–240s" }
+      },
+      "text": {
+        "Primary text": { "recommended": 125, "max": 2200 },
+        "Headline": { "recommended": 32, "max": 255 },
+        "Description": { "recommended": 18, "max": 255 }
+      },
+      "requirements": ["2–10 cards per carousel", "Each card can be image or video"],
+      "notes": ["All cards must use same aspect ratio"]
+    },
+    {
+      "name": "Right Column",
+      "slug": "right-column",
+      "aliases": ["sidebar"],
+      "formats": {
+        "image": { "dimensions": "1200×628", "aspectRatio": "1.91:1", "maxSize": "30MB", "types": ["JPG", "PNG"] }
+      },
+      "text": {
+        "Headline": { "recommended": 25, "max": 255 },
+        "Description": { "max": 255 }
+      },
+      "requirements": ["Desktop only", "Image only (no video)"],
+      "notes": ["Smallest ad format on Meta — lower CPMs but lower engagement"]
+    },
+    {
+      "name": "Instant Article",
+      "slug": "instant-article",
+      "aliases": ["instant-articles"],
+      "formats": {
+        "image": { "dimensions": "1080×1080 or 1200×628", "aspectRatio": "1:1 or 1.91:1", "maxSize": "30MB", "types": ["JPG", "PNG"] },
+        "video": { "dimensions": "1080×1080", "aspectRatio": "1:1", "maxSize": "4GB", "types": ["MP4", "MOV"], "duration": "1s–240s" }
+      },
+      "text": {
+        "Primary text": { "recommended": 125, "max": 2200 },
+        "Headline": { "recommended": 25, "max": 255 }
+      },
+      "requirements": [],
+      "notes": ["Appears within Facebook Instant Articles"]
+    },
+    {
+      "name": "Marketplace",
+      "slug": "marketplace",
+      "formats": {
+        "image": { "dimensions": "1080×1080", "aspectRatio": "1:1", "maxSize": "30MB", "types": ["JPG", "PNG"] },
+        "video": { "dimensions": "1080×1080", "aspectRatio": "1:1", "maxSize": "4GB", "types": ["MP4", "MOV"], "duration": "1s–240s" }
+      },
+      "text": {
+        "Primary text": { "recommended": 125, "max": 2200 },
+        "Headline": { "recommended": 25, "max": 255 }
+      },
+      "requirements": [],
+      "notes": ["Shown in Facebook Marketplace browsing"]
+    }
+  ]
+}

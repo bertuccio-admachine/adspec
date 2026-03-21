@@ -1,0 +1,72 @@
+{
+  "name": "Amazon Ads",
+  "slug": "amazon",
+  "aliases": ["amz", "amazon-ads"],
+  "placements": [
+    {
+      "name": "Sponsored Products",
+      "slug": "sponsored-products",
+      "aliases": ["sp", "product-ads"],
+      "formats": {
+        "image": { "dimensions": "From product listing", "note": "Uses main product image — minimum 1000×1000 for zoom" }
+      },
+      "text": {
+        "Product title": { "max": 200, "recommended": 80 }
+      },
+      "requirements": ["Active product listing required", "Buy Box eligible", "Keyword or auto targeting"],
+      "notes": ["Most common Amazon ad type", "CPC billing", "Appears in search results and product pages"]
+    },
+    {
+      "name": "Sponsored Brands",
+      "slug": "sponsored-brands",
+      "aliases": ["sb", "headline-search"],
+      "formats": {
+        "image": { "dimensions": "400×400 (logo), product images from listing", "maxSize": "1MB", "types": ["JPG", "PNG"] },
+        "video": { "dimensions": "1920×1080 or 1280×720", "aspectRatio": "16:9", "maxSize": "500MB", "types": ["MP4"], "duration": "6s–45s" }
+      },
+      "text": {
+        "Headline": { "max": 50 },
+        "Brand name": { "max": 30 }
+      },
+      "requirements": ["Brand Registry required", "Links to Store or product listing"],
+      "notes": ["Appears at top of search results", "Logo + headline + up to 3 products"]
+    },
+    {
+      "name": "Sponsored Display",
+      "slug": "sponsored-display",
+      "aliases": ["sd", "display"],
+      "formats": {
+        "image": { "dimensions": "1200×628 or 600×500 or 1200×1200", "maxSize": "5MB", "types": ["JPG", "PNG"] },
+        "video": { "dimensions": "1920×1080 or 1080×1080", "aspectRatio": "16:9 or 1:1", "maxSize": "500MB", "types": ["MP4"], "duration": "6s–30s" }
+      },
+      "text": {
+        "Headline": { "max": 50 },
+        "Logo": { "note": "600×600 recommended" }
+      },
+      "requirements": ["Audience or product targeting"],
+      "notes": ["Reaches shoppers on and off Amazon", "Retargeting capable"]
+    },
+    {
+      "name": "Sponsored TV",
+      "slug": "sponsored-tv",
+      "aliases": ["stv", "streaming-tv"],
+      "formats": {
+        "video": { "dimensions": "1920×1080", "aspectRatio": "16:9", "maxSize": "4GB", "types": ["MP4", "MOV"], "duration": "15s, 20s, 30s, or 60s" }
+      },
+      "text": {},
+      "requirements": ["No minimum spend", "Self-service in Amazon Ads console"],
+      "notes": ["Streams on Freevee, Twitch, Fire TV", "No Brand Registry needed"]
+    },
+    {
+      "name": "Amazon DSP Display",
+      "slug": "dsp-display",
+      "aliases": ["dsp", "programmatic"],
+      "formats": {
+        "image": { "dimensions": "300×250, 728×90, 160×600, 970×250, 320×50", "maxSize": "200KB (static), 750KB (HTML5)", "types": ["JPG", "PNG", "GIF", "HTML5"] }
+      },
+      "text": {},
+      "requirements": ["Amazon DSP access required (managed or self-serve)", "Minimum $50K+ for managed"],
+      "notes": ["Programmatic display across Amazon and third-party sites", "Rich audience targeting"]
+    }
+  ]
+}

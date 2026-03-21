@@ -1,0 +1,91 @@
+{
+  "name": "LinkedIn",
+  "slug": "linkedin",
+  "aliases": ["li"],
+  "placements": [
+    {
+      "name": "Single Image Ad",
+      "slug": "single-image",
+      "aliases": ["image", "sponsored-image"],
+      "formats": {
+        "image": { "dimensions": "1200×627 (landscape) or 1080×1080 (square)", "aspectRatio": "1.91:1 or 1:1", "maxSize": "5MB", "types": ["JPG", "PNG"] }
+      },
+      "text": {
+        "Introductory text": { "recommended": 150, "max": 600 },
+        "Headline": { "recommended": 70, "max": 200 },
+        "Description": { "max": 300 }
+      },
+      "requirements": ["Destination URL required"],
+      "notes": ["Most common LinkedIn ad format"]
+    },
+    {
+      "name": "Video Ad",
+      "slug": "video",
+      "aliases": ["sponsored-video"],
+      "formats": {
+        "video": { "dimensions": "1920×1080 (landscape), 1080×1080 (square), 1080×1920 (vertical)", "aspectRatio": "16:9, 1:1, or 9:16", "maxSize": "200MB", "types": ["MP4"], "duration": "3s–30min", "recommended": "15–30s" }
+      },
+      "text": {
+        "Introductory text": { "recommended": 150, "max": 600 },
+        "Headline": { "max": 200 }
+      },
+      "requirements": ["Minimum 75KB file size", "Frame rate: 30fps max"],
+      "notes": ["Autoplay on mute in feed — add captions"]
+    },
+    {
+      "name": "Carousel Ad",
+      "slug": "carousel",
+      "aliases": ["carousel-ad"],
+      "formats": {
+        "image": { "dimensions": "1080×1080", "aspectRatio": "1:1", "maxSize": "10MB", "types": ["JPG", "PNG"] }
+      },
+      "text": {
+        "Introductory text": { "recommended": 150, "max": 255 },
+        "Card headline": { "max": 45 }
+      },
+      "requirements": ["2–10 cards", "Each card links to unique URL"],
+      "notes": ["Great for multi-product or storytelling"]
+    },
+    {
+      "name": "Message Ad",
+      "slug": "message",
+      "aliases": ["inmail", "sponsored-inmail"],
+      "formats": {},
+      "text": {
+        "Subject line": { "max": 60 },
+        "Message body": { "max": 1500 },
+        "CTA button": { "max": 20 }
+      },
+      "requirements": ["Sender must be a LinkedIn member", "One CTA button required"],
+      "notes": ["Delivered to LinkedIn inbox", "Only sent when member is active"]
+    },
+    {
+      "name": "Document Ad",
+      "slug": "document",
+      "aliases": ["doc", "pdf-ad"],
+      "formats": {
+        "document": { "maxSize": "100MB", "types": ["PDF", "DOC", "DOCX", "PPT", "PPTX"], "maxPages": 300 }
+      },
+      "text": {
+        "Introductory text": { "recommended": 150, "max": 600 },
+        "Headline": { "max": 200 }
+      },
+      "requirements": ["Lead gen form can gate after preview pages"],
+      "notes": ["Users swipe through document in feed", "Great for B2B lead gen"]
+    },
+    {
+      "name": "Text Ad",
+      "slug": "text",
+      "aliases": ["text-ad", "sidebar"],
+      "formats": {
+        "image": { "dimensions": "100×100", "maxSize": "2MB", "types": ["JPG", "PNG"] }
+      },
+      "text": {
+        "Headline": { "max": 25 },
+        "Description": { "max": 75 }
+      },
+      "requirements": ["Desktop only"],
+      "notes": ["Appears in right rail or top banner", "CPC or CPM billing"]
+    }
+  ]
+}

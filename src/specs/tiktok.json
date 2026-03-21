@@ -1,0 +1,86 @@
+{
+  "name": "TikTok",
+  "slug": "tiktok",
+  "aliases": ["tt"],
+  "placements": [
+    {
+      "name": "In-Feed Ad",
+      "slug": "in-feed",
+      "aliases": ["infeed", "feed"],
+      "formats": {
+        "video": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "500MB", "types": ["MP4", "MOV", "AVI"], "duration": "5s–60s", "recommended": "21–34s" }
+      },
+      "text": {
+        "Ad description": { "recommended": 80, "max": 100 },
+        "Display name": { "min": 2, "max": 20 }
+      },
+      "requirements": ["No emoji in first 4 chars of description", "Brand name or app name required"],
+      "notes": ["Appears in For You feed", "Sound-on by default — use audio"]
+    },
+    {
+      "name": "TopView",
+      "slug": "topview",
+      "aliases": ["top-view"],
+      "formats": {
+        "video": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "500MB", "types": ["MP4", "MOV"], "duration": "5s–60s", "recommended": "15s" }
+      },
+      "text": {
+        "Ad description": { "recommended": 80, "max": 100 },
+        "Display name": { "min": 2, "max": 20 }
+      },
+      "requirements": ["Premium placement — first ad users see on app open"],
+      "notes": ["Full-screen takeover", "Highest impact TikTok format"]
+    },
+    {
+      "name": "Spark Ads",
+      "slug": "spark",
+      "aliases": ["spark-ads", "boosted"],
+      "formats": {
+        "video": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "500MB", "types": ["MP4", "MOV"], "duration": "5s–60s" }
+      },
+      "text": {
+        "Ad description": { "max": 100 }
+      },
+      "requirements": ["Must use existing organic TikTok post", "Creator must authorize via Spark code"],
+      "notes": ["Boosts organic content as paid ad", "Retains likes/comments/shares"]
+    },
+    {
+      "name": "Branded Hashtag Challenge",
+      "slug": "hashtag-challenge",
+      "aliases": ["htc", "challenge"],
+      "formats": {
+        "video": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "500MB", "types": ["MP4", "MOV"], "duration": "up to 60s" }
+      },
+      "text": {
+        "Hashtag": { "max": 35 },
+        "Challenge description": { "max": 150 }
+      },
+      "requirements": ["Custom hashtag page", "Typically 6-day campaign"],
+      "notes": ["Premium format — contact TikTok sales", "Drives UGC participation"]
+    },
+    {
+      "name": "Branded Effect",
+      "slug": "branded-effect",
+      "aliases": ["effect", "ar-effect"],
+      "formats": {
+        "other": { "types": ["2D", "3D", "AR"], "duration": "up to 10 days" }
+      },
+      "text": {},
+      "requirements": ["Custom AR filter/effect", "Built with TikTok Effect Studio"],
+      "notes": ["Users interact with brand via AR", "Combine with Hashtag Challenge for max impact"]
+    },
+    {
+      "name": "Search Ads",
+      "slug": "search",
+      "aliases": ["search-ads"],
+      "formats": {
+        "video": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "500MB", "types": ["MP4", "MOV"], "duration": "5s–60s" }
+      },
+      "text": {
+        "Ad description": { "max": 100 }
+      },
+      "requirements": ["Keyword targeting", "Appears in TikTok search results"],
+      "notes": ["Newer format — captures high-intent users"]
+    }
+  ]
+}

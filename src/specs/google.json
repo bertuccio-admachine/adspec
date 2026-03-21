@@ -1,0 +1,120 @@
+{
+  "name": "Google Ads",
+  "slug": "google",
+  "aliases": ["gads", "google-ads", "adwords"],
+  "placements": [
+    {
+      "name": "Responsive Search Ad",
+      "slug": "responsive-search",
+      "aliases": ["rsa", "search", "text-ad"],
+      "formats": {},
+      "text": {
+        "Headlines": { "max": 30, "note": "Up to 15 headlines" },
+        "Descriptions": { "max": 90, "note": "Up to 4 descriptions" },
+        "Display path": { "max": 15, "note": "2 path fields" }
+      },
+      "requirements": ["Minimum 3 headlines and 2 descriptions", "Final URL required"],
+      "notes": ["Google mixes and matches headlines/descriptions", "Pin headlines to positions if needed"]
+    },
+    {
+      "name": "Responsive Display Ad",
+      "slug": "responsive-display",
+      "aliases": ["rda", "display"],
+      "formats": {
+        "image": { "dimensions": "1200×628 (landscape), 1200×1200 (square), 1200×628 (logo)", "aspectRatio": "1.91:1, 1:1, 4:1 (logo)", "maxSize": "5.12MB", "types": ["JPG", "PNG", "GIF (static)"] }
+      },
+      "text": {
+        "Short headline": { "max": 30, "note": "Up to 5" },
+        "Long headline": { "max": 90 },
+        "Descriptions": { "max": 90, "note": "Up to 5" },
+        "Business name": { "max": 25 }
+      },
+      "requirements": ["At least 1 landscape image, 1 square image, 1 logo", "Final URL required"],
+      "notes": ["Google auto-sizes to fit available display placements", "Supports up to 15 images"]
+    },
+    {
+      "name": "YouTube In-Stream (Skippable)",
+      "slug": "youtube-instream",
+      "aliases": ["instream", "preroll", "skippable"],
+      "formats": {
+        "video": { "dimensions": "1920×1080 or 1280×720", "aspectRatio": "16:9", "maxSize": "256GB", "types": ["MP4", "MOV", "AVI", "WMV"], "duration": "12s–3min recommended", "recommended": "15–30s" }
+      },
+      "text": {
+        "Companion banner": { "note": "300×60 auto-generated or custom" },
+        "CTA": { "max": 10 },
+        "Headline": { "max": 15 }
+      },
+      "requirements": ["Must be uploaded to YouTube first", "Skippable after 5 seconds"],
+      "notes": ["You pay only when viewer watches 30s or interacts"]
+    },
+    {
+      "name": "YouTube Non-Skippable",
+      "slug": "youtube-nonskip",
+      "aliases": ["nonskip", "bumper-long"],
+      "formats": {
+        "video": { "dimensions": "1920×1080 or 1280×720", "aspectRatio": "16:9", "maxSize": "256GB", "types": ["MP4", "MOV", "AVI"], "duration": "15s max" }
+      },
+      "text": {
+        "Companion banner": { "note": "300×60" }
+      },
+      "requirements": ["Must be 15 seconds or shorter", "CPM billing"],
+      "notes": ["Viewers cannot skip — use for brand awareness"]
+    },
+    {
+      "name": "YouTube Bumper Ad",
+      "slug": "youtube-bumper",
+      "aliases": ["bumper"],
+      "formats": {
+        "video": { "dimensions": "1920×1080 or 1280×720", "aspectRatio": "16:9", "maxSize": "256GB", "types": ["MP4", "MOV"], "duration": "6s max" }
+      },
+      "text": {},
+      "requirements": ["Exactly 6 seconds or less", "Non-skippable"],
+      "notes": ["Best for short, punchy brand messages", "CPM billing"]
+    },
+    {
+      "name": "YouTube Shorts Ad",
+      "slug": "youtube-shorts",
+      "aliases": ["shorts"],
+      "formats": {
+        "video": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "256GB", "types": ["MP4", "MOV"], "duration": "10s–60s" }
+      },
+      "text": {},
+      "requirements": ["Vertical video", "Appears between Shorts"],
+      "notes": ["Swipeable format similar to TikTok/Reels"]
+    },
+    {
+      "name": "Performance Max",
+      "slug": "pmax",
+      "aliases": ["performance-max"],
+      "formats": {
+        "image": { "dimensions": "1200×628 (landscape), 1200×1200 (square), 1200×628 (portrait optional)", "aspectRatio": "1.91:1, 1:1, 4:5", "maxSize": "5.12MB", "types": ["JPG", "PNG"] },
+        "video": { "dimensions": "Any (horizontal, vertical, square)", "aspectRatio": "16:9, 9:16, 1:1", "types": ["MP4"], "duration": "10s+ recommended" }
+      },
+      "text": {
+        "Headlines": { "max": 30, "note": "Up to 5" },
+        "Long headlines": { "max": 90, "note": "Up to 5" },
+        "Descriptions": { "max": 90, "note": "Up to 5" },
+        "Business name": { "max": 25 },
+        "CTA": { "note": "Automated or manual" }
+      },
+      "requirements": ["Final URL required", "Feeds into Search, Display, YouTube, Gmail, Discover, Maps"],
+      "notes": ["Google's AI-driven cross-channel format", "Provide as many assets as possible"]
+    },
+    {
+      "name": "Discovery/Demand Gen",
+      "slug": "demand-gen",
+      "aliases": ["discovery", "demand-gen-ad"],
+      "formats": {
+        "image": { "dimensions": "1200×628 (landscape), 1200×1200 (square), 960×1200 (portrait)", "aspectRatio": "1.91:1, 1:1, 4:5", "maxSize": "5.12MB", "types": ["JPG", "PNG"] },
+        "video": { "dimensions": "Various", "aspectRatio": "16:9, 1:1, 9:16, 4:5", "types": ["MP4"], "duration": "10s+" }
+      },
+      "text": {
+        "Headlines": { "max": 40, "note": "Up to 5" },
+        "Descriptions": { "max": 90, "note": "Up to 5" },
+        "Business name": { "max": 25 }
+      },
+      "requirements": ["Appears in YouTube Home, Gmail, Discover feed"],
+      "notes": ["Visually rich, native-looking placements"]
+    }
+  ]
+}

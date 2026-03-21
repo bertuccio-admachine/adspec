@@ -1,0 +1,81 @@
+{
+  "name": "YouTube",
+  "slug": "youtube",
+  "aliases": ["yt"],
+  "placements": [
+    {
+      "name": "Skippable In-Stream",
+      "slug": "skippable",
+      "aliases": ["instream", "preroll", "trueview"],
+      "formats": {
+        "video": { "dimensions": "1920×1080 or 1280×720", "aspectRatio": "16:9", "maxSize": "256GB", "types": ["MP4", "MOV", "AVI", "WMV"], "duration": "12s–3min", "recommended": "15–30s" }
+      },
+      "text": {
+        "CTA overlay": { "max": 10 },
+        "Headline": { "max": 15 },
+        "Companion banner": { "note": "300×60 (auto or custom)" }
+      },
+      "requirements": ["Upload to YouTube first", "Skippable after 5s"],
+      "notes": ["Pay when viewer watches 30s or interacts", "Use with Google Ads → see `adspec google youtube-instream`"]
+    },
+    {
+      "name": "Non-Skippable In-Stream",
+      "slug": "non-skippable",
+      "aliases": ["nonskip"],
+      "formats": {
+        "video": { "dimensions": "1920×1080 or 1280×720", "aspectRatio": "16:9", "maxSize": "256GB", "types": ["MP4", "MOV"], "duration": "15s max" }
+      },
+      "text": { "Companion banner": { "note": "300×60" } },
+      "requirements": ["15 seconds or less", "CPM billing"],
+      "notes": ["Cannot be skipped"]
+    },
+    {
+      "name": "Bumper Ad",
+      "slug": "bumper",
+      "aliases": ["bumper-ad"],
+      "formats": {
+        "video": { "dimensions": "1920×1080 or 1280×720", "aspectRatio": "16:9", "maxSize": "256GB", "types": ["MP4", "MOV"], "duration": "6s max" }
+      },
+      "text": {},
+      "requirements": ["6 seconds or less", "Non-skippable", "CPM billing"],
+      "notes": ["Best for brand recall"]
+    },
+    {
+      "name": "Shorts Ad",
+      "slug": "shorts",
+      "aliases": ["shorts-ad"],
+      "formats": {
+        "video": { "dimensions": "1080×1920", "aspectRatio": "9:16", "maxSize": "256GB", "types": ["MP4", "MOV"], "duration": "10s–60s" }
+      },
+      "text": {},
+      "requirements": ["Vertical video", "Appears between Shorts"],
+      "notes": ["Same as `adspec google youtube-shorts`"]
+    },
+    {
+      "name": "Display Overlay",
+      "slug": "overlay",
+      "aliases": ["display-overlay", "banner"],
+      "formats": {
+        "image": { "dimensions": "480×70", "maxSize": "150KB", "types": ["JPG", "PNG", "GIF"] }
+      },
+      "text": {},
+      "requirements": ["Desktop only", "Semi-transparent overlay on lower 20% of video"],
+      "notes": ["CPC or CPM billing"]
+    },
+    {
+      "name": "Discovery / In-Feed",
+      "slug": "discovery",
+      "aliases": ["in-feed", "discovery-ad"],
+      "formats": {
+        "video": { "dimensions": "1920×1080 or 1280×720", "aspectRatio": "16:9", "types": ["MP4", "MOV"] }
+      },
+      "text": {
+        "Headline": { "max": 100, "recommended": 25 },
+        "Description 1": { "max": 35 },
+        "Description 2": { "max": 35 }
+      },
+      "requirements": ["Thumbnail shown in feed", "User clicks to watch"],
+      "notes": ["Appears on YouTube Home, Search, Watch Next"]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "adspec",
+  "version": "1.0.0",
+  "description": "Instant ad platform creative specs from the terminal. Stop googling dimensions.",
+  "main": "src/index.js",
+  "bin": {
+    "adspec": "./bin/adspec.js"
+  },
+  "keywords": ["ads", "advertising", "specs", "creative", "media-buying", "marketing", "cli", "meta", "tiktok", "google-ads", "linkedin", "snapchat", "pinterest", "youtube", "twitter", "amazon"],
+  "author": "Ad Machine",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/admachineai/adspec.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": ["bin/", "src/", "LICENSE", "README.md"]
+}
